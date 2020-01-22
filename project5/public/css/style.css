@@ -1,0 +1,13 @@
+body {
+    text-align: center;
+}
+.image_op {
+    width: 450px;
+    margin: auto;
+}
+.main_text {
+    font-size: xx-large;
+    background-color: wheat;
+    color: crimson;
+    text-align: center;
+}
