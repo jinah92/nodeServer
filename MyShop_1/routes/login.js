@@ -18,7 +18,7 @@ router.post('/', (req, res)=>{
             message = "login ok";
             req.session.email = req.body.email;
             //req.session.email = login_email;    // request에서의 email을 session에 저장
-            // req.session.email = req.body.
+            // req.session.email = req.body.    
             const my_basket = [];
             req.session.basket = my_basket;
             break;

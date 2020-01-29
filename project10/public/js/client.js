@@ -43,7 +43,7 @@ $(document).ready(function(){
         const product = checkbox.join(',');
 
         const send_param={product};
-        
+
         $.post('basket',send_param,function(returnData){
             alert(returnData.message);
         });

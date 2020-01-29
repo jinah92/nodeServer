@@ -9,7 +9,7 @@ const user_data = {id:"a", pw:"b"};
 // app.use(미들웨어) => app에서 미들웨어를 사용하겠다.
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
-app.use(express.urlencoded({extended : false}));
+app.use(express.urlencoded({extended : true}));
 
 // 세션 생성
 app.use(session({
@@ -37,6 +37,7 @@ app.post('/login',(req,res)=>{
 
 app.post('/basket',(req,res)=>{
     console.log("basket처리:"+req.headers.cookie);
+    console.log("basket 처리2: " + req.body.product);
     console.log(req.session);
     
     const product=req.body.product;

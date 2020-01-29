@@ -1,0 +1,18 @@
+div {
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+}
+.btn {
+    color: black;
+}
+#head_div {
+    margin: auto;
+    text-align: center;
+    background-color: darkorange;
+    color: white;
+    line-height: 50px;
+    width: 700px;
+    font-size: large;
+}
+
