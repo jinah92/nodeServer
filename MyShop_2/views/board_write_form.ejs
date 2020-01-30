@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %>></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="http://localhost:3000/js/client.js"></script>
+    
+</head>
+<body>
+    <table boarder="1" width = "650">
+        <tr><td>글 제목</td><td><input id="board_title" placeholder="제목을 입력하세요"></td></tr>
+        <tr><td>글 내용</td><td><textarea id="board_content" placeholder="내용을 입력하세요" rows="10" cols="50"></textarea></td></tr>
+    </table>
+    <button type="reset">취소</button>
+    <button id="board_write_btn">등록</button>
+</body>
+</html>

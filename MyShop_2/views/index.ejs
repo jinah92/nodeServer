@@ -154,6 +154,9 @@
   textarea {
     resize: none;
   }
+  .board:hover{
+    color: red;
+  }
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -260,7 +263,7 @@
   <br>
   <div class="row">
     <div class="col-sm-4">
-      <p class="text-center"><strong>Name</strong></p><br>
+      <p class="text-center"><strong class="board" id="board_write_text">게시판 글쓰기</strong></p><br>
       <a href="#demo" data-toggle="collapse">
         <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
       </a>
@@ -271,7 +274,7 @@
       </div>
     </div>
     <div class="col-sm-4">
-      <p class="text-center"><strong>Name</strong></p><br>
+      <p class="text-center"><strong class="board" id="board_read_text">게시판 보기</strong></p><br>
       <a href="#demo2" data-toggle="collapse">
         <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
       </a>
@@ -348,13 +351,17 @@
           <form role="form">
             <div class="form-group">
               <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> Tickets, $23 per person</label>
-              <input type="number" class="form-control" id="psw" placeholder="How many?">
+              <input type="number" class="form-control" id="quantity" placeholder="How many?">
             </div>
             <div class="form-group">
               <label for="usrname"><span class="glyphicon glyphicon-user"></span> Send To</label>
-              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+              <select class="form-control" id="product">
+                <option value="Paris">Paris</option>
+                <option value="NewYork">NewYork</option>
+                <option value="San Fransisco">San Fransisco</option>
+              </select>
             </div>
-              <button type="submit" class="btn btn-block">Pay 
+              <button type="submit" class="btn btn-block" id="basket_btn">Pay 
                 <span class="glyphicon glyphicon-ok"></span>
               </button>
           </form>

@@ -1,6 +1,8 @@
-const indexRouter = require('./routes/index')
+const boardRouter = require('./routes/board');
+const basketRouter = require('./routes/basket');
 const logoutRouter = require('./routes/logout');
 const loginRouter = require('./routes/login');
+const indexRouter = require('./routes/index')
 const contactRouter = require('./routes/contact');
 const express = require('express');
 const session = require('express-session');
@@ -25,10 +27,12 @@ app.use(
     })
 );
 
-app.use('/', indexRouter);
+app.use('/board', boardRouter);
+app.use('/basket', basketRouter);
 app.use('/logout', logoutRouter);
 app.use('/login', loginRouter);
 app.use('/contact', contactRouter);
+app.use('/', indexRouter);
 
 
 app.listen(3000, ()=>{

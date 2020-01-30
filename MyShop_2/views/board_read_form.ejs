@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="http://localhost:3000/js/client.js"></script>
+    
+</head>
+<body>
+    <table boarder="1" width = "650">
+        <tr><td>글 번호</td><td>제목</td><td>m_no</td><td>내용</td></tr>
+        <% for (var i=0; i< result.length; i++) {%>
+        <tr>
+                <td><%= result[i].bo_no %></td>
+                <td><%= result[i].m_no %></td>
+                <td><%= result[i].title %></td>
+                <td><%= result[i].content %></td>
+        </tr>
+        <% } %>
+            
+    </table>
+</body>
+</html>

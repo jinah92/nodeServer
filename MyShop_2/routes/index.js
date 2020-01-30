@@ -6,7 +6,7 @@ indexRouter.get('/', (req, res, next)=>{
     if(req.session.email){
         logined = 1;    // 로그인
     }
-    res.render('index', {flag:logined, name: req.session.name});
+    res.render('index', {flag: logined, name: req.session.name});
 });
 
 
